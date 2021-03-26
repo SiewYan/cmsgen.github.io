@@ -22,7 +22,7 @@ jobs:
       - name: store artifact output website
         uses: actions/upload-artifact@v2
         with:
-          name: Index HTML 
+          name: build output file
           path: docs/
       - name: store artifact pdf
         uses: actions/upload-artifact@v2
@@ -35,11 +35,13 @@ jobs:
     runs-on: ubuntu-latest
     needs: build
     steps:
+      - uses: actions/download-artifact@v2
+        with:
+          name: build output file
+          
       - name: commit and deploy new changes
         run: | 
           git clone https://github.com/SiewYan/cmsgen.github.io.git --branch gh-pages --single-branch gh-pages
-          ls
-          pwd
           cp -r docs/* gh-pages/
           cd gh-pages
           git config --local user.email "siew.yan.hoh@github.com"
