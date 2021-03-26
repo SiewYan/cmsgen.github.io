@@ -1,0 +1,43 @@
+.. CMS-GEN documentation master file, created by
+   sphinx-quickstart on Thu Mar 25 22:57:16 2021.
+   You can adapt this file completely to your liking, but it should at least
+   contain the root `toctree` directive.
+
+Welcome to CMS-GEN's documentation!
+===================================
+.. toctree::
+   :maxdepth: 2
+   :caption: Contents:
+
+TeacherAPI main
+================
+.. automodule:: app
+   :members:
+
+TeacherAPI controller
+=====================
+.. automodule:: teacherAPI.controller
+   :members:
+
+TeacherAPI modles
+====================
+.. automodule:: teacherAPI.models
+   :members:
+
+TeacherAPI database
+====================
+.. automodule:: teacherAPI.database
+   :members:
+
+TeacherAPI populate
+====================
+.. automodule:: teacherAPI.populate
+   :members:
+
+
+Indices and tables
+==================
+
+* :ref:`genindex`
+* :ref:`modindex`
+* :ref:`search`
