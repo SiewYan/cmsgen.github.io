@@ -38,6 +38,8 @@ jobs:
       - name: commit and deploy new changes
         run: | 
           git clone https://github.com/SiewYan/cmsgen.github.io.git --branch gh-pages --single-branch gh-pages
+          ls
+          pwd
           cp -r docs/* gh-pages/
           cd gh-pages
           git config --local user.email "siew.yan.hoh@github.com"
