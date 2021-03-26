@@ -23,7 +23,7 @@ jobs:
         uses: actions/upload-artifact@v2
         with:
           name: build output file
-          path: docs/
+          path: docs
       - name: store artifact pdf
         uses: actions/upload-artifact@v2
         with:
@@ -42,7 +42,6 @@ jobs:
       - name: commit and deploy new changes
         run: | 
           git clone https://github.com/SiewYan/cmsgen.github.io.git --branch gh-pages --single-branch gh-pages
-          ls
           cp -r docs/* gh-pages/
           cd gh-pages
           git config --local user.email "siew.yan.hoh@github.com"
