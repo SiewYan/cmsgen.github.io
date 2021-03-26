@@ -1,0 +1,29 @@
+name: AutomaticHost
+on:
+  push:
+    branches: 
+      - main
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+    - uses: actions/setup-node@v1
+      with:
+        node-version: '10.x'
+    - run: |
+        cd docsrc
+        make github
+    - run: |
+        git config --local user.email "siew.yan.hoh@github.com"
+        git config --local user.name "SiewYan"
+        git checkout --orphan gh-pages
+        git reset
+        git add docs/* -f
+        git mv docs/* ./ -k
+        git commit -m "Update hosted version"
+    - uses: ad-m/github-push-action@master
+      with:
+        github_token: ${{ secrets.MY_TOKEN }}
+        force: true
+        branch: gh-pages
