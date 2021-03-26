@@ -6,32 +6,24 @@ jobs:
   build:
 
     runs-on: ubuntu-latest
+    container: siewyanhoh/sphinx-env:latest
 
     steps:
-    - uses: actions/checkout@v1
-    # Standard drop-in approach that should work for most people.
-    - uses: ammaraskar/sphinx-action@master
-      with:
-        docs-folder: "docs/"
-    # Example of using a custom build-command.
-    - uses: ammaraskar/sphinx-action@master
-      with:
-        build-command: "sphinx-build -b html . _build"
-        docs-folder: "docs2/"
-    # Grabbing custom dependencies and building as a pdf.
-    - uses: ammaraskar/sphinx-action@master
-      with:
-        pre-build-command: "apt-get update -y && apt-get install -y latexmk texlive-latex-recommended texlive-latex-extra texlive-fonts-recommended"
-        build-command: "make latexpdf"
-        docs-folder: "docs2/"
-    # Great extra actions to compose with:
-    # Create an artifact of the html output.
-    - uses: actions/upload-artifact@v1
-      with:
-        name: DocumentationHTML
-        path: docs/_build/html/
-    # Create an artifact out of the previously built pdf.
-    - uses: actions/upload-artifact@v1
-      with:
-        name: Documentation
-        path: docs2/_build/latex/pdfexample.pdf
+      - name: checkout repository
+        uses: actions/checkout@v2
+        
+      - name: build sphinx
+        run: |
+          cd docsrc
+          make github
+          
+      - name: store artifact output website
+        uses: actions/upload-artifact@v2
+        with:
+          name: build output file
+          path: docs/
+      - name: store artifact pdf
+        uses: actions/upload-artifact@v2
+        with:
+          name: PDF documentation
+          path: docsrc/_build/rinoh/cms-gen.pdf
