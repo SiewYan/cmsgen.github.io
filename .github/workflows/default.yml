@@ -32,7 +32,7 @@ jobs:
           path: docsrc/_build/rinoh/cms-gen.pdf
 
       - name: Upload coverage to Codecov
-      	uses: codecov/codecov-action@v1
+        uses: codecov/codecov-action@v1
         with:
           token: ${{ secrets.CODECOV_TOKEN }} # not required for public report
           file: ./coverage1.xml,./coverage2.xml # optional
