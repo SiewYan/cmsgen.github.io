@@ -10,6 +10,7 @@
 # add these directories to sys.path here. If the directory is relative to the
 # documentation root, use os.path.abspath to make it absolute, like shown here.
 #
+import io
 import os
 import sys
 sys.path.insert(0, os.path.abspath('../..'))
@@ -24,6 +25,29 @@ author = 'cms-generator'
 # The full version, including alpha/beta/rc tags
 release = '1'
 
+# The short X.Y version.
+#version = "{major}.{minor}".format(**_version_info)
+# The full version, including alpha/beta/rc tags.
+#release = "{major}.{minor}.{patch}{tag}".format(**_version_info)
+
+
+_docs_path = os.path.dirname(__file__)
+_version_path = os.path.abspath(
+    os.path.join(_docs_path, "..", "source", "__init__.py")
+)
+#with open(_version_path, encoding="utf-8") as fp:
+#    try:
+#        _version_info = re.search(
+#            r'^__version__ = "'
+#            r"(?P<major>\d+)"
+#            r"\.(?P<minor>\d+)"
+#            r"\.(?P<patch>\d+)"
+#            r'(?P<tag>.*)?"$',
+#            fp.read(),
+#            re.M,
+#        ).groupdict()
+#    except IndexError:
+#        raise RuntimeError("Unable to determine version.")
 
 # -- General configuration ---------------------------------------------------
 
@@ -31,9 +55,16 @@ release = '1'
 # extensions coming with Sphinx (named 'sphinx.ext.*') or your custom
 # ones.
 extensions = [
-    'sphinx.ext.autodoc' , 'sphinx.ext.mathjax',  'recommonmark',
-    'rinoh.frontend.sphinx'
+    'sphinx.ext.autodoc' , 
+    'sphinx.ext.mathjax',  
+    'recommonmark',
+    'rinoh.frontend.sphinx',
+    "sphinx.ext.viewcode",
+    "sphinx.ext.intersphinx",
 ]
+
+# Add any paths that contain custom themes here, relative to this directory.
+#html_theme_path = []
 
 # Add any paths that contain templates here, relative to this directory.
 templates_path = ['_templates']
@@ -51,6 +82,9 @@ exclude_patterns = []
 #
 html_theme = 'alabaster'
 
+#html_theme = "aiohttp_theme"
+#html_theme_path = ["_theme"]
+
 # Theme options are theme-specific and customize the look and feel of a theme
 # further.  For a list of options available for each theme, see the
 # documentation.
@@ -65,17 +99,17 @@ html_theme_options = {
     "github_banner": True,
     "badges": [
         {
-            "image": "https://github.com/SiewYan/cmsgen.github.io/workflows/default.yml/badge.svg",
+            "image": "https://github.com/SiewYan/cmsgen.github.io/workflows/CI_push/badge.svg",
             "target": "https://github.com/SiewYan/cmsgen.github.io/actions?query=CI+and+CD+Sphinx",
             "height": "20",
             "alt": "Github Pipelines CI/CD status",
         },
-        #{
-        #    "image": "https://codecov.io/github/aio-libs/aiohttp/coverage.svg?branch=master",
-        #    "target": "https://codecov.io/github/aio-libs/aiohttp",
-        #    "height": "20",
-        #    "alt": "Code coverage status",
-        #},
+        {
+            "image": "https://codecov.io/gh/SiewYan/cmsgen.github.io/branch/main/graph/badge.svg?token=P1D24USZ7B",
+            "target": "https://codecov.io/gh/SiewYan/cmsgen.github.io",
+            "height": "20",
+            "alt": "Code coverage status",
+        },
         #{
         #    "image": "https://img.shields.io/discourse/status?server=https%3A%2F%2Faio-libs.discourse.group",
         #    "target": "https://aio-libs.discourse.group",
@@ -88,7 +122,7 @@ html_theme_options = {
         #    "height": "20",
         #    "alt": "Chat on Gitter",
         #},
-],
+    ],
 }
 
 # Add any paths that contain custom static files (such as style sheets) here,
@@ -106,6 +140,7 @@ latex_elements = {
 html_sidebars = {
     '**': [
         'about.html',
+        'badges.html',
         'navigation.html',
         'relations.html',
         'searchbox.html',

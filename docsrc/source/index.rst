@@ -13,14 +13,22 @@ Current version is |release|.
 
 .. _GitHub: https://github.com/SiewYan/cmsgen.github.io
 
-Information highlight
-=====================
+This page intends to:
 
 - Provides Generator related information.
 - Supports CMS user in term of GEN related technicality.
 - Provides a platform for FAQ.
 
-CMS-GEN hosted tutorial
+Hightlight
 =======================
 
-:ref:`Monte Carlo generator tutorial <mc-tutorial-list>`
+- :ref:`Monte Carlo generator tutorial <mc-tutorial-list>`
+
+
+.. toctree::
+   :hidden:
+   :name: mastertoc
+   :maxdepth: 2
+
+   tutorial
+   faq
