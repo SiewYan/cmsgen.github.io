@@ -17,7 +17,7 @@ jobs:
 
       - name: patching theme file in docker
         run: |
-          yum install patch 
+          yum install -y patch 
           scp ./docsrc/badge.patch /usr/local/lib/python3.8/site-packages/alabaster
           patch < badge.patch
         
