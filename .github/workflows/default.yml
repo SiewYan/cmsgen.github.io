@@ -34,8 +34,8 @@ jobs:
       - name: Upload coverage to Codecov
       	uses: codecov/codecov-action@v1
         with:
-          token: ${{ secrets.CODECOV_TOKEN }} # not required for public repos
-	  files: ./coverage1.xml,./coverage2.xml # optional
+          token: ${{ secrets.CODECOV_TOKEN }} # not required for public report
+          files: ./coverage1.xml,./coverage2.xml # optional
           directory: ./coverage/reports/
           flags: unittests # optional
           name: codecov-umbrella
