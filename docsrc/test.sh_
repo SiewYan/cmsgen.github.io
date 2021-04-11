@@ -1,0 +1,5 @@
+#!/bin/bash
+
+DOCKER="siewyanhoh/sphinx-env:latest"
+
+docker run --rm -v `echo "${PWD%/*}"`:/project ${DOCKER} bash -c "cd /project/docsrc && make html && sphinx-build -b rinoh source _build/rinoh && rm -rf ../docs/* && usermod -aG root $USER && cp -a build/html/. ../docs"

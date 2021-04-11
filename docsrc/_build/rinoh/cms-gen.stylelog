@@ -13,10 +13,10 @@
          > (0,0,1,0,2) title page author
            (0,0,0,0,2) body
         SingleStyledText('cms-generator')
-    Paragraph('Mar 26, 2021', style='title page date')
+    Paragraph('Apr 11, 2021', style='title page date')
          > (0,0,1,0,2) title page date
            (0,0,0,0,2) body
-        SingleStyledText('Mar 26, 2021')
+        SingleStyledText('Apr 11, 2021')
 ---------------------------------- page i ----------------------------------
 #### FootnoteContainer('footnotes')
   StaticGroupedFlowables()
@@ -36,6 +36,38 @@
            (0,0,0,1,1) chapter
       TableOfContents()   table of contents
            > (0,0,0,0,2) table of contents
+        TableOfContentsEntry('1	Information highlight	3')
+             > (0,0,0,1,2) toc level 1
+            ReferenceField('1')
+                 > (0,0,0,1,4) toc entry number reference field
+                   (0,0,0,0,1) linked reference
+              SingleStyledText('1')
+            Tab('	')
+            ReferenceField('Information highlight')
+                 > (0,0,0,0,1) linked reference
+              MixedStyledText('Information highlight')
+                MixedStyledText('Information highlight')
+                  SingleStyledText('Information highlight')
+            Tab('	')
+            ReferenceField('3')
+                 > (0,0,0,0,1) linked reference
+              SingleStyledText('3')
+        TableOfContentsEntry('2	CMS-GEN hosted tutorial	5')
+             > (0,0,0,1,2) toc level 1
+            ReferenceField('2')
+                 > (0,0,0,1,4) toc entry number reference field
+                   (0,0,0,0,1) linked reference
+              SingleStyledText('2')
+            Tab('	')
+            ReferenceField('CMS-GEN hosted tutorial')
+                 > (0,0,0,0,1) linked reference
+              MixedStyledText('CMS-GEN hosted tutorial')
+                MixedStyledText('CMS-GEN hosted tutorial')
+                  SingleStyledText('CMS-GEN hosted tutorial')
+            Tab('	')
+            ReferenceField('5')
+                 > (0,0,0,0,1) linked reference
+              SingleStyledText('5')
 #### DownExpandingContainer('footer')
   StaticGroupedFlowables()
     Footer('		i')
@@ -54,66 +86,18 @@
 #### ChainedContainer('column1')
   StaticGroupedFlowables()
     DocumentTree()
-      StaticGroupedFlowables()   /home/shoh/works/GEN/cmsgen.github.io/docsrc/source/index.rst:0 <compound>
-      List(style='bulleted')   /home/shoh/works/GEN/cmsgen.github.io/docsrc/source/index.rst:41 <bullet_list>
-           > (0,0,1,0,2) bulleted list
-        ListItem()   /home/shoh/works/GEN/cmsgen.github.io/docsrc/source/index.rst:None <list_item>
-             x (0,0,1,0,4) bulleted list item
-             > fallback to default style
-          ListItemLabel('•')
-               > (0,0,1,0,6) bulleted list item label
-                 (0,0,0,0,2) list item label
-              MixedStyledText('•')
-                SingleStyledText('')
-                SingleStyledText('•')
-                SingleStyledText('')
-          StaticGroupedFlowables()
-               > (0,0,0,0,3) list item body
-            Paragraph('genindex')   /home/shoh/works/GEN/cmsgen.github.io/docsrc/source/index.rst:41 <paragraph>
-                 > (0,0,0,0,5) list item paragraph
-                   (0,0,0,0,2) body
-                MixedStyledText('genindex')
-                  MixedStyledText('genindex')
-                    MixedStyledText('genindex')   None:None <inline>
-                      SingleStyledText('genindex')
-        ListItem()   /home/shoh/works/GEN/cmsgen.github.io/docsrc/source/index.rst:None <list_item>
-             x (0,0,1,0,4) bulleted list item
-             > fallback to default style
-          ListItemLabel('•')
-               > (0,0,1,0,6) bulleted list item label
-                 (0,0,0,0,2) list item label
-              MixedStyledText('•')
-                SingleStyledText('')
-                SingleStyledText('•')
-                SingleStyledText('')
-          StaticGroupedFlowables()
-               > (0,0,0,0,3) list item body
-            Paragraph('modindex')   /home/shoh/works/GEN/cmsgen.github.io/docsrc/source/index.rst:42 <paragraph>
-                 > (0,0,0,0,5) list item paragraph
-                   (0,0,0,0,2) body
-                MixedStyledText('modindex')
-                  MixedStyledText('modindex')
-                    MixedStyledText('modindex')   None:None <inline>
-                      SingleStyledText('modindex')
-        ListItem()   /home/shoh/works/GEN/cmsgen.github.io/docsrc/source/index.rst:None <list_item>
-             x (0,0,1,0,4) bulleted list item
-             > fallback to default style
-          ListItemLabel('•')
-               > (0,0,1,0,6) bulleted list item label
-                 (0,0,0,0,2) list item label
-              MixedStyledText('•')
-                SingleStyledText('')
-                SingleStyledText('•')
-                SingleStyledText('')
-          StaticGroupedFlowables()
-               > (0,0,0,0,3) list item body
-            Paragraph('search')   /home/shoh/works/GEN/cmsgen.github.io/docsrc/source/index.rst:43 <paragraph>
-                 > (0,0,0,0,5) list item paragraph
-                   (0,0,0,0,2) body
-                MixedStyledText('search')
-                  MixedStyledText('search')
-                    MixedStyledText('search')   None:None <inline>
-                      SingleStyledText('search')
+      Paragraph('CMS Generator group information')   /home/shoh/works/GEN/cmsgen.github.io/docsrc/source/index.rst:10 <paragraph>
+           > (0,0,0,0,2) body
+          MixedStyledText('CMS Generator group information')
+            MixedStyledText('CMS Generator group information')
+              SingleStyledText('CMS Generator group information')
+      Paragraph('Current version is 1.')   /home/shoh/works/GEN/cmsgen.github.io/docsrc/source/index.rst:12 <paragraph>
+           > (0,0,0,0,2) body
+          MixedStyledText('Current version is 1.')
+            MixedStyledText('Current version is 1.')
+              SingleStyledText('Current version is ')
+              SingleStyledText('1')
+              SingleStyledText('.')
 #### DownExpandingContainer('footer')
   StaticGroupedFlowables()
     Footer('		1')
@@ -124,7 +108,225 @@
             Tab('	')
             Field('1')
               SingleStyledText('1')
+---------------------------------- page 2 ----------------------------------
+#### FootnoteContainer('footnotes')
+  StaticGroupedFlowables()
+#### DownExpandingContainer('floats')
+  StaticGroupedFlowables()
+#### ChainedContainer('column1')
+  (continued) StaticGroupedFlowables()
+    (continued) DocumentTree()
+#### UpExpandingContainer('header')
+  StaticGroupedFlowables()
+    Header('CMS-GEN, Release 1')
+         > (0,0,0,0,2) header
+        MixedStyledText('CMS-GEN, Release 1')
+          MixedStyledText('CMS-GEN, Release 1')
+            Field('CMS-GEN')
+              SingleStyledText('CMS-GEN')
+            SingleStyledText(', ')
+            Field('Release 1')
+              SingleStyledText('Release 1')
+#### DownExpandingContainer('footer')
+  StaticGroupedFlowables()
+    Footer('2		Chapter ​.  ​')
+         > (0,0,0,0,2) footer
+        MixedStyledText('2		Chapter ​.  ​')
+          MixedStyledText('2		Chapter ​.  ​')
+            Field('2')
+              SingleStyledText('2')
+            Tab('	')
+            Tab('	')
+            StringField('Chapter')
+              SingleStyledText('Chapter')
+            SingleStyledText(' ')
+            Field('​')
+              SingleStyledText('​')
+            SingleStyledText('.  ')
+            Field('​')
+              SingleStyledText('​')
 ---------------------------------- page 3 ----------------------------------
+#### FootnoteContainer('footnotes')
+  StaticGroupedFlowables()
+#### DownExpandingContainer('floats')
+  StaticGroupedFlowables()
+#### FlowablesContainer('chapter title')
+  Paragraph('Chapter 1', style='body matter chapter label')
+       > (0,0,1,0,2) body matter chapter label
+         (0,0,0,0,2) body
+      MixedStyledText('Chapter 1')
+        MixedStyledText('Chapter 1')
+          MixedStyledText('Chapter ')
+            StringField('Chapter')
+              SingleStyledText('Chapter')
+            SingleStyledText(' ')
+          Field('1', style='number')
+               > (0,0,2,0,3) body matter chapter number
+            SingleStyledText('1')
+  Paragraph('Information highlight', style='body matter chapter title')
+       > (0,0,1,0,2) body matter chapter title
+         (0,0,0,0,2) body
+      Field('Information highlight')
+        MixedStyledText('Information highlight')
+          MixedStyledText('Information highlight')
+            SingleStyledText('Information highlight')
+#### ChainedContainer('column1')
+  (continued) StaticGroupedFlowables()
+    (continued) DocumentTree()
+      Section(id='information-highlight')   /home/shoh/works/GEN/cmsgen.github.io/docsrc/source/index.rst:17 <section>
+           > (0,0,0,1,2) chapter
+        List(style='bulleted')   /home/shoh/works/GEN/cmsgen.github.io/docsrc/source/index.rst:19 <bullet_list>
+             > (0,0,1,0,2) bulleted list
+          ListItem()   /home/shoh/works/GEN/cmsgen.github.io/docsrc/source/index.rst:None <list_item>
+               x (0,0,1,0,4) bulleted list item
+               > fallback to default style
+            ListItemLabel('•')
+                 > (0,0,1,0,6) bulleted list item label
+                   (0,0,0,0,2) list item label
+                MixedStyledText('•')
+                  SingleStyledText('')
+                  SingleStyledText('•')
+                  SingleStyledText('')
+            StaticGroupedFlowables()
+                 > (0,0,0,0,3) list item body
+              Paragraph('Provides Generator related infor...')   /home/shoh/works/GEN/cmsgen.github.io/docsrc/source/index.rst:19 <paragraph>
+                   > (0,0,0,0,5) list item paragraph
+                     (0,0,0,0,2) body
+                  MixedStyledText('Provides Generator related infor...')
+                    MixedStyledText('Provides Generator related infor...')
+                      SingleStyledText('Provides Generator related infor...')
+          ListItem()   /home/shoh/works/GEN/cmsgen.github.io/docsrc/source/index.rst:None <list_item>
+               x (0,0,1,0,4) bulleted list item
+               > fallback to default style
+            ListItemLabel('•')
+                 > (0,0,1,0,6) bulleted list item label
+                   (0,0,0,0,2) list item label
+                MixedStyledText('•')
+                  SingleStyledText('')
+                  SingleStyledText('•')
+                  SingleStyledText('')
+            StaticGroupedFlowables()
+                 > (0,0,0,0,3) list item body
+              Paragraph('Supports CMS user in term of GEN...')   /home/shoh/works/GEN/cmsgen.github.io/docsrc/source/index.rst:20 <paragraph>
+                   > (0,0,0,0,5) list item paragraph
+                     (0,0,0,0,2) body
+                  MixedStyledText('Supports CMS user in term of GEN...')
+                    MixedStyledText('Supports CMS user in term of GEN...')
+                      SingleStyledText('Supports CMS user in term of GEN...')
+          ListItem()   /home/shoh/works/GEN/cmsgen.github.io/docsrc/source/index.rst:None <list_item>
+               x (0,0,1,0,4) bulleted list item
+               > fallback to default style
+            ListItemLabel('•')
+                 > (0,0,1,0,6) bulleted list item label
+                   (0,0,0,0,2) list item label
+                MixedStyledText('•')
+                  SingleStyledText('')
+                  SingleStyledText('•')
+                  SingleStyledText('')
+            StaticGroupedFlowables()
+                 > (0,0,0,0,3) list item body
+              Paragraph('Provides a platform for FAQ.')   /home/shoh/works/GEN/cmsgen.github.io/docsrc/source/index.rst:21 <paragraph>
+                   > (0,0,0,0,5) list item paragraph
+                     (0,0,0,0,2) body
+                  MixedStyledText('Provides a platform for FAQ.')
+                    MixedStyledText('Provides a platform for FAQ.')
+                      SingleStyledText('Provides a platform for FAQ.')
+#### DownExpandingContainer('footer')
+  StaticGroupedFlowables()
+    Footer('		3')
+         > (0,0,0,0,2) footer
+        MixedStyledText('		3')
+          MixedStyledText('		3')
+            Tab('	')
+            Tab('	')
+            Field('3')
+              SingleStyledText('3')
+---------------------------------- page 4 ----------------------------------
+#### FootnoteContainer('footnotes')
+  StaticGroupedFlowables()
+#### DownExpandingContainer('floats')
+  StaticGroupedFlowables()
+#### ChainedContainer('column1')
+  (continued) StaticGroupedFlowables()
+    (continued) DocumentTree()
+#### UpExpandingContainer('header')
+  StaticGroupedFlowables()
+    Header('CMS-GEN, Release 1')
+         > (0,0,0,0,2) header
+        MixedStyledText('CMS-GEN, Release 1')
+          MixedStyledText('CMS-GEN, Release 1')
+            Field('CMS-GEN')
+              SingleStyledText('CMS-GEN')
+            SingleStyledText(', ')
+            Field('Release 1')
+              SingleStyledText('Release 1')
+#### DownExpandingContainer('footer')
+  StaticGroupedFlowables()
+    Footer('4		Chapter 1.  Information highl...')
+         > (0,0,0,0,2) footer
+        MixedStyledText('4		Chapter 1.  Information highl...')
+          MixedStyledText('4		Chapter 1.  Information highl...')
+            Field('4')
+              SingleStyledText('4')
+            Tab('	')
+            Tab('	')
+            StringField('Chapter')
+              SingleStyledText('Chapter')
+            SingleStyledText(' ')
+            Field('1')
+              SingleStyledText('1')
+            SingleStyledText('.  ')
+            Field('Information highlight')
+              MixedStyledText('Information highlight')
+                MixedStyledText('Information highlight')
+                  SingleStyledText('Information highlight')
+---------------------------------- page 5 ----------------------------------
+#### FootnoteContainer('footnotes')
+  StaticGroupedFlowables()
+#### DownExpandingContainer('floats')
+  StaticGroupedFlowables()
+#### FlowablesContainer('chapter title')
+  Paragraph('Chapter 2', style='body matter chapter label')
+       > (0,0,1,0,2) body matter chapter label
+         (0,0,0,0,2) body
+      MixedStyledText('Chapter 2')
+        MixedStyledText('Chapter 2')
+          MixedStyledText('Chapter ')
+            StringField('Chapter')
+              SingleStyledText('Chapter')
+            SingleStyledText(' ')
+          Field('2', style='number')
+               > (0,0,2,0,3) body matter chapter number
+            SingleStyledText('2')
+  Paragraph('CMS-GEN hosted tutorial', style='body matter chapter title')
+       > (0,0,1,0,2) body matter chapter title
+         (0,0,0,0,2) body
+      Field('CMS-GEN hosted tutorial')
+        MixedStyledText('CMS-GEN hosted tutorial')
+          MixedStyledText('CMS-GEN hosted tutorial')
+            SingleStyledText('CMS-GEN hosted tutorial')
+#### ChainedContainer('column1')
+  (continued) StaticGroupedFlowables()
+    (continued) DocumentTree()
+      Section(id='cms-gen-hosted-tutorial')   /home/shoh/works/GEN/cmsgen.github.io/docsrc/source/index.rst:24 <section>
+           > (0,0,0,1,2) chapter
+        Paragraph('Monte Carlo generator tutorial')   /home/shoh/works/GEN/cmsgen.github.io/docsrc/source/index.rst:26 <paragraph>
+             > (0,0,0,0,2) body
+            MixedStyledText('Monte Carlo generator tutorial')
+              MixedStyledText('Monte Carlo generator tutorial')
+                MixedStyledText('Monte Carlo generator tutorial')   None:None <inline>
+                  SingleStyledText('Monte Carlo generator tutorial')
+#### DownExpandingContainer('footer')
+  StaticGroupedFlowables()
+    Footer('		5')
+         > (0,0,0,0,2) footer
+        MixedStyledText('		5')
+          MixedStyledText('		5')
+            Tab('	')
+            Tab('	')
+            Field('5')
+              SingleStyledText('5')
+---------------------------------- page 7 ----------------------------------
 #### FootnoteContainer('footnotes')
   StaticGroupedFlowables()
 #### DownExpandingContainer('floats')
@@ -136,11 +338,11 @@
   StaticGroupedFlowables()
 #### DownExpandingContainer('footer')
   StaticGroupedFlowables()
-    Footer('		3')
+    Footer('		7')
          > (0,0,0,0,2) footer
-        MixedStyledText('		3')
-          MixedStyledText('		3')
+        MixedStyledText('		7')
+          MixedStyledText('		7')
             Tab('	')
             Tab('	')
-            Field('3')
-              SingleStyledText('3')
+            Field('7')
+              SingleStyledText('7')

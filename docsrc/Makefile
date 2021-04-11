@@ -13,10 +13,13 @@ help:
 	@$(SPHINXBUILD) -M help "$(SOURCEDIR)" "$(BUILDDIR)" $(SPHINXOPTS) $(O)
 
 All:
+	@rm -rf build/*
 	@make html
 	@$(SPHINXBUILD) -b rinoh source _build/rinoh
 
 github:
+	@rm -rf build/*
+	@rm -rf ../docs/*
 	@make html
 	@$(SPHINXBUILD) -b rinoh source _build/rinoh
 	@cp -a build/html/. ../docs

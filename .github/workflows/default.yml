@@ -1,5 +1,5 @@
 # https://github.com/marketplace/actions/sphinx-build
-name: CI and CD Sphinx
+name: CI_push
 
 on:
   push:

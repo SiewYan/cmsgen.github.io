@@ -3,41 +3,24 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-Welcome to CMS-GEN's documentation!
-===================================
-.. toctree::
-   :maxdepth: 2
-   :caption: Contents:
+================================
+Welcome to CMS-GEN Information
+================================
 
-TeacherAPI main
-================
-.. automodule:: app
-   :members:
+CMS Generator group information
 
-TeacherAPI controller
+Current version is |release|.
+
+.. _GitHub: https://github.com/SiewYan/cmsgen.github.io
+
+Information highlight
 =====================
-.. automodule:: teacherAPI.controller
-   :members:
 
-TeacherAPI modles
-====================
-.. automodule:: teacherAPI.models
-   :members:
+- Provides Generator related information.
+- Supports CMS user in term of GEN related technicality.
+- Provides a platform for FAQ.
 
-TeacherAPI database
-====================
-.. automodule:: teacherAPI.database
-   :members:
+CMS-GEN hosted tutorial
+=======================
 
-TeacherAPI populate
-====================
-.. automodule:: teacherAPI.populate
-   :members:
-
-
-Indices and tables
-==================
-
-* :ref:`genindex`
-* :ref:`modindex`
-* :ref:`search`
+:ref:`Monte Carlo generator tutorial <mc-tutorial-list>`
