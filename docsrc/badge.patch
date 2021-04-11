@@ -1,0 +1,10 @@
+--- a/theme.conf	2021-04-11 18:17:34.463647588 +0000
++++ b/theme.conf	2021-04-11 18:20:50.202285242 +0000
+@@ -39,6 +39,7 @@
+ tidelift_url =
+ touch_icon =
+ travis_button = false
++badges =
+ 
+ gray_1 = #444
+ gray_2 = #EEE
