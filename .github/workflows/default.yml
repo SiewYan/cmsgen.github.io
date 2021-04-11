@@ -17,11 +17,11 @@ jobs:
 
       - name: patching theme file in docker
         run: |
-          yum install -y patch 
+          yum install -y patch
           scp ./docsrc/badge.patch /usr/local/lib/python3.8/site-packages/alabaster
-	  cd /usr/local/lib/python3.8/site-packages/alabaster
+          cd /usr/local/lib/python3.8/site-packages/alabaster
           patch < badge.patch
-        
+
       - name: build sphinx
         run: |
           cd docsrc
