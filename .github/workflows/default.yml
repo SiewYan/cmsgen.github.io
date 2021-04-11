@@ -31,22 +31,22 @@ jobs:
           name: PDF documentation
           path: docsrc/_build/rinoh/cms-gen.pdf
 
-      - name: Generate coverage report
-        run: |
-          pip install pytest
-          pip install pytest-cov
-          pytest --cov=./ --cov-report=xml
+      #- name: Generate coverage report
+      #  run: |
+      #    pip3.8 install pytest
+      #    pip3.8 install pytest-cov
+      #    pytest --cov=./ --cov-report=xml
 
-      - name: Upload coverage to Codecov
-        uses: codecov/codecov-action@v1
-        with:
-          token: ${{ secrets.CODECOV_TOKEN }} # not required for public report
-          file: ./coverage1.xml, ./coverage2.xml # optional
-          #directory: ./coverage/reports/
-          flags: unittests # optional
-          name: codecov-umbrella
-          fail_ci_if_error: true # optional (default = false)
-          verbose: true # optional (default = false)
+      #- name: Upload coverage to Codecov
+      #  uses: codecov/codecov-action@v1
+      #  with:
+      #    token: ${{ secrets.CODECOV_TOKEN }} # not required for public report
+      #    file: ./coverage1.xml, ./coverage2.xml # optional
+      #    #directory: ./coverage/reports/
+      #    flags: unittests # optional
+      #    name: codecov-umbrella
+      #    fail_ci_if_error: true # optional (default = false)
+      #    verbose: true # optional (default = false)
           
   # Publish built docs to gh-pages branch.
   autohost:
