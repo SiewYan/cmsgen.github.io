@@ -3,37 +3,7 @@ Monte Carlo Generator Tutorial
 
 .. _mc-tutorial-list:
 
-There are also many other demo projects, give them a try!
+List of useful tutorial relating to Geneartor's activities.
 
-We have created for you a selection of fun projects, that can show you how to
-create application from the *blog* to the applications related to data science.
-Please feel free to add your open source example project by making Pull
-Request.
-
- - `Shortify <https://github.com/aio-libs/aiohttp-demos/tree/master/demos/shortify>`_
-   - *URL shortener* with *Redis* storage.
-
- - `Moderator <https://github.com/aio-libs/aiohttp-demos/tree/master/demos/moderator>`_
-   - UI and API for classification of offensive and toxic comments using
-   *Kaggle* data and *scikit-learn*.
-
- - `Moderator bot <https://github.com/aio-libs/aiohttp-demos/tree/master/demos/moderator_bot>`_
-   - Slack bot for moderating offensive and toxic comments using provided model from *Moderator AI*
-
- - `Motortwit <https://github.com/aio-libs/aiohttp-demos/tree/master/demos/motortwit>`_
-   - *Twitter* clone with *MongoDB* storage.
-
- - `Imagetagger <https://github.com/aio-libs/aiohttp-demos/tree/master/demos/imagetagger>`_
-   - Example how to deploy deep learning model with *aiohttp*.
-
- - `Chat <https://github.com/aio-libs/aiohttp-demos/tree/master/demos/chat>`_
-   - Simple *chat* using websockets.
-
- - `Polls <https://github.com/aio-libs/aiohttp-demos/tree/master/demos/polls>`_
-   - Simple *polls* application with PostgreSQL storage.
-
- - `Blog <https://github.com/aio-libs/aiohttp-demos/tree/master/demos/blog>`_
-   - The *blog* application with *PostgreSQL* storage and *Redis* session store.
-
- - `Graphql <https://github.com/aio-libs/aiohttp-demos/tree/master/demos/graphql-demo>`_
-   - The simple real-time chat that based on the *GraphQL* api and *Apollo client*.
+ - `The McM and pMp Tutorial (2019) <https://indico.cern.ch/event/807778/>`_
+   - It will explain the Monte Carlo (MC) production in the CMS collaboration by emphasizing on the two main tools:  Monte Carlo request Management (McM) and Production Monitoring Platform (pMp). Please register to confirm your participation.
