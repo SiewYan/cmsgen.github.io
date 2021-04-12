@@ -17,7 +17,6 @@ This page intends to:
 
 - Provides Generator related information.
 - Supports CMS user in term of GEN related technicality.
-- Provides a platform for FAQ.
 
 Hightlight
 =======================
