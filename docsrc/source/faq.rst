@@ -23,7 +23,7 @@ Example: ::
   ./gridpack_generation.sh wplustest_4f_LO cards/examples/wplustest_4f_LO
 
 Where can i find the Info for MC production for Ultra Legacy Campaigns 2016, 2017, 2018
---------------------------------------------------------------------
+----------------------------------------------------------------------------------------
 
 Ultra legacy (UL) campaigns are displayed at this `link <https://cms-pdmv.cern.ch/mcm/campaigns?prepid=RunIISummer20UL*&page=-1&shown=63>_`. The UL campaigns are the standard campaigns with the corresponding setup schemes to emulate the RunII datataking period. 
 
